@@ -1,7 +1,35 @@
-# Tauri + Vanilla TS
+# Reproduction Steps
 
-This template should help get you started developing with Tauri in vanilla HTML, CSS and Typescript.
+## 1. Clone this repository
 
-## Recommended IDE Setup
+```bash
+git clone https://github.com/InkSha/read-image-but-return-zip
+cd read-image-but-return-zip
+```
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+## 2. Install dependencies
+
+```bash
+pnpm install
+```
+
+## 3. Start the upload server
+
+```bash
+pnpm run serve
+```
+
+## 4. Run the Tauri Android development build
+
+```bash
+pnpm run tauri android dev
+```
+
+The console will output content:
+
+```bash
+05-30 09:58:58.550 31786 31811 I RustStdoutStderr: path: asset://localhost/resources/images/icon.jpg
+05-30 09:58:58.550 31786 31811 I RustStdoutStderr: mime: application/zip
+05-30 09:58:58.550 31786 31811 I RustStdoutStderr: size: 393241626
+05-30 09:58:58.550 31786 31811 I RustStdoutStderr: ready upload file "icon.jpg"
+```
