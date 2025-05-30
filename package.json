@@ -7,15 +7,20 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "serve": "node server.js"
   },
   "dependencies": {
     "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-fs": "~2.3.0",
+    "@tauri-apps/plugin-http": "~2",
     "@tauri-apps/plugin-opener": "^2"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^2",
-    "vite": "^6.0.3",
-    "typescript": "~5.6.2"
+    "express": "^5.1.0",
+    "multer": "^2.0.0",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.3"
   }
 }
