@@ -1,0 +1,6 @@
+/src/main/java/com/read_image_but_return_zip/app/generated
+/src/main/jniLibs/**/*.so
+/src/main/assets/tauri.conf.json
+/tauri.build.gradle.kts
+/proguard-tauri.pro
+/tauri.properties
